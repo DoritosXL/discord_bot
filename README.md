@@ -15,7 +15,7 @@ the bot reacts with:
 the bot reacts with: 
 ### version 1.0.1
 --------------------
-### 'clear + <number>'
+### 'clear + number'
 the bot reacts with: 
 deleting posts up to the inputted number
 --------------------
@@ -25,5 +25,5 @@ the bot reacts with:
 --------------------
 ### 'explain'
 the bot reacts with: 
-### <information about the server>
+### 'information about the server'
 --------------------
