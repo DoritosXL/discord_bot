@@ -17,7 +17,7 @@ the bot reacts with:
 --------------------
 ### 'clear + number'
 the bot reacts with: 
-deleting posts up to the inputted number
+### deleting posts up to the inputted number
 --------------------
 ### 'embed'
 the bot reacts with: 
