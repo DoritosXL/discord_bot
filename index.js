@@ -1,7 +1,11 @@
 const Discord = require('discord.js');
 const Client = new Discord.Client();
+require('dotenv').config()
 
-const token = 'NTg2NDc5ODQ3NjM1OTQzNDI0.XPoolg.WmKxeZdQyTZYSribjQsCp3M_dB4';
+// console.log(process.env.token);
+
+
+const token = process.env.token;
 
 const PREFIX = '.';
 
@@ -21,6 +25,9 @@ Client.on('message', message=>{
   switch(args[0]){
     case 'ping':
       message.channel.send('pong!')
+      break;
+      case 'badmeme':
+      message.channel.send('oke!')
       break;
     case 'website':
       message.channel.send('check out "hakan.life"')
