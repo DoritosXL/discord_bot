@@ -24,7 +24,7 @@ Client.on('message', message=>{
 
   switch(args[0]){
     case 'ping':
-      message.channel.send('pong!')
+      message.channel.send('you typed ping!')
       break;
       case 'badmeme':
       message.channel.send('oke!')
