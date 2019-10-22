@@ -21,7 +21,7 @@ Client.on('message', message=>{
   // }
 
   let args = message.content.substring(PREFIX.length).split(" ");
-
+  const embed = new Discord.RichEmbed();
   switch(args[0]){
     case 'ping':
       message.channel.send('you typed ping!')
@@ -45,13 +45,12 @@ Client.on('message', message=>{
       message.channel.bulkDelete(args[1]);
       break;
     case 'embed':
-      const embed = new Discord.RichEmbed()
-      .addField('Player name', message.author.username);
+      embed.addField('Player name', message.author.username);
       message.channel.sendEmbed(embed);
       break;
     case 'explain':
       if(args[1] == 'server'){
-        const embed = new Discord.RichEmbed()
+        embed
         .setTitle('information')
         .addField('Name', message.author.username, true)
         .addField('Version', '1.0', true)
